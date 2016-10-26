@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		02B815A31D48AAA700A7F1BA /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 02B815A61D48AAA700A7F1BA /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				02B815A81D48AB2900A7F1BA /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		027C520A1D33A73000F49BF9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 027C52091D33A73000F49BF9 /* Constants.m */; };
+		02E17F4C1D34F55D00831260 /* TrackingWorkerNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E17F4B1D34F55D00831260 /* TrackingWorkerNSOperation.m */; };
+		02E17F4F1D350CD100831260 /* TrackingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E17F4E1D350CD100831260 /* TrackingItem.m */; };
+		0AB623CC1D2FB1BA0090D1C3 /* NDDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */; };
+		0AB623E21D33E49D0090D1C3 /* NDTrackingWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB623E11D33E49D0090D1C3 /* NDTrackingWorker.m */; };
+		0AE1E54C1D2D027400C56EDD /* NxusDSP.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AE1E54B1D2D027400C56EDD /* NxusDSP.h */; };
+		0AE1E54E1D2D027400C56EDD /* NxusDSP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1E54D1D2D027400C56EDD /* NxusDSP.m */; };
+		0AE1E55A1D2D3EC600C56EDD /* NDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1E5591D2D3EC600C56EDD /* NDLogger.m */; };
+		0AE1E5601D2D54AB00C56EDD /* NDDeviceInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1E55F1D2D54AB00C56EDD /* NDDeviceInformation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AE1E5461D2D027400C56EDD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				0AE1E54C1D2D027400C56EDD /* NxusDSP.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		027C52081D33A73000F49BF9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		027C52091D33A73000F49BF9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		02CC984B1D3E54CE00423F62 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		02E17F4A1D34F55D00831260 /* TrackingWorkerNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingWorkerNSOperation.h; sourceTree = "<group>"; };
+		02E17F4B1D34F55D00831260 /* TrackingWorkerNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingWorkerNSOperation.m; sourceTree = "<group>"; };
+		02E17F4D1D350CD100831260 /* TrackingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingItem.h; sourceTree = "<group>"; };
+		02E17F4E1D350CD100831260 /* TrackingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingItem.m; sourceTree = "<group>"; };
+		0AB623CA1D2FB1A00090D1C3 /* NDDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDataContainer.h; sourceTree = "<group>"; };
+		0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDataContainer.m; sourceTree = "<group>"; };
+		0AB623E01D33E49D0090D1C3 /* NDTrackingWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTrackingWorker.h; sourceTree = "<group>"; };
+		0AB623E11D33E49D0090D1C3 /* NDTrackingWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTrackingWorker.m; sourceTree = "<group>"; };
+		0AB623ED1D3CFAD60090D1C3 /* MIT-LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "MIT-LICENSE.txt"; path = "NxusDSP/MIT-LICENSE.txt"; sourceTree = "<group>"; };
+		0AE1E5481D2D027400C56EDD /* libNxusDSP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNxusDSP.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE1E54B1D2D027400C56EDD /* NxusDSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NxusDSP.h; sourceTree = "<group>"; };
+		0AE1E54D1D2D027400C56EDD /* NxusDSP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NxusDSP.m; sourceTree = "<group>"; };
+		0AE1E5551D2D26A200C56EDD /* NDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NDHelpers.h; sourceTree = "<group>"; };
+		0AE1E5561D2D2AFC00C56EDD /* NDLogLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDLogLevel.h; sourceTree = "<group>"; };
+		0AE1E5581D2D2D4E00C56EDD /* NDLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDLogger.h; sourceTree = "<group>"; };
+		0AE1E5591D2D3EC600C56EDD /* NDLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDLogger.m; sourceTree = "<group>"; };
+		0AE1E55E1D2D53B000C56EDD /* NDDeviceInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDeviceInformation.h; sourceTree = "<group>"; };
+		0AE1E55F1D2D54AB00C56EDD /* NDDeviceInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDeviceInformation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AE1E5451D2D027400C56EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027C520C1D33D69700F49BF9 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				02E17F4D1D350CD100831260 /* TrackingItem.h */,
+				02E17F4E1D350CD100831260 /* TrackingItem.m */,
+				02E17F4A1D34F55D00831260 /* TrackingWorkerNSOperation.h */,
+				02E17F4B1D34F55D00831260 /* TrackingWorkerNSOperation.m */,
+				0AB623E01D33E49D0090D1C3 /* NDTrackingWorker.h */,
+				0AB623E11D33E49D0090D1C3 /* NDTrackingWorker.m */,
+			);
+			name = Tracking;
+			sourceTree = "<group>";
+		};
+		0AE1E53F1D2D027400C56EDD = {
+			isa = PBXGroup;
+			children = (
+				02CC984B1D3E54CE00423F62 /* SafariServices.framework */,
+				0AB623ED1D3CFAD60090D1C3 /* MIT-LICENSE.txt */,
+				0AE1E54A1D2D027400C56EDD /* NxusDSP */,
+				0AE1E5491D2D027400C56EDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AE1E5491D2D027400C56EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AE1E5481D2D027400C56EDD /* libNxusDSP.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AE1E54A1D2D027400C56EDD /* NxusDSP */ = {
+			isa = PBXGroup;
+			children = (
+				027C520C1D33D69700F49BF9 /* Tracking */,
+				0AE1E55B1D2D467700C56EDD /* Dto */,
+				0AE1E5541D2D267800C56EDD /* Utilities */,
+				0AE1E54B1D2D027400C56EDD /* NxusDSP.h */,
+				0AE1E54D1D2D027400C56EDD /* NxusDSP.m */,
+			);
+			path = NxusDSP;
+			sourceTree = "<group>";
+		};
+		0AE1E5541D2D267800C56EDD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0AE1E5551D2D26A200C56EDD /* NDHelpers.h */,
+				0AE1E5561D2D2AFC00C56EDD /* NDLogLevel.h */,
+				0AE1E5581D2D2D4E00C56EDD /* NDLogger.h */,
+				0AE1E5591D2D3EC600C56EDD /* NDLogger.m */,
+				0AE1E55E1D2D53B000C56EDD /* NDDeviceInformation.h */,
+				0AE1E55F1D2D54AB00C56EDD /* NDDeviceInformation.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		0AE1E55B1D2D467700C56EDD /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				0AB623CA1D2FB1A00090D1C3 /* NDDataContainer.h */,
+				0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */,
+				027C52091D33A73000F49BF9 /* Constants.m */,
+				027C52081D33A73000F49BF9 /* Constants.h */,
+			);
+			name = Dto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AE1E5471D2D027400C56EDD /* NxusDSP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE1E5511D2D027400C56EDD /* Build configuration list for PBXNativeTarget "NxusDSP" */;
+			buildPhases = (
+				0AE1E5441D2D027400C56EDD /* Sources */,
+				0AE1E5451D2D027400C56EDD /* Frameworks */,
+				0AE1E5461D2D027400C56EDD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NxusDSP;
+			productName = NxusDSP;
+			productReference = 0AE1E5481D2D027400C56EDD /* libNxusDSP.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AE1E5401D2D027400C56EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "TechMpire ltd";
+				TargetAttributes = {
+					02B815A31D48AAA700A7F1BA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6YE468A6JU;
+					};
+					0AE1E5471D2D027400C56EDD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0AE1E5431D2D027400C56EDD /* Build configuration list for PBXProject "NxusDSP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AE1E53F1D2D027400C56EDD;
+			productRefGroup = 0AE1E5491D2D027400C56EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AE1E5471D2D027400C56EDD /* NxusDSP */,
+				02B815A31D48AAA700A7F1BA /* UniversalLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B815A81D48AB2900A7F1BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target NxusDSP ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target NxusDSP -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AE1E5441D2D027400C56EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE1E54E1D2D027400C56EDD /* NxusDSP.m in Sources */,
+				02E17F4C1D34F55D00831260 /* TrackingWorkerNSOperation.m in Sources */,
+				027C520A1D33A73000F49BF9 /* Constants.m in Sources */,
+				02E17F4F1D350CD100831260 /* TrackingItem.m in Sources */,
+				0AE1E5601D2D54AB00C56EDD /* NDDeviceInformation.m in Sources */,
+				0AE1E55A1D2D3EC600C56EDD /* NDLogger.m in Sources */,
+				0AB623E21D33E49D0090D1C3 /* NDTrackingWorker.m in Sources */,
+				0AB623CC1D2FB1BA0090D1C3 /* NDDataContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02B815A41D48AAA700A7F1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02B815A51D48AAA700A7F1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0AE1E54F1D2D027400C56EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AE1E5501D2D027400C56EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AE1E5521D2D027400C56EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0AE1E5531D2D027400C56EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02B815A61D48AAA700A7F1BA /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B815A41D48AAA700A7F1BA /* Debug */,
+				02B815A51D48AAA700A7F1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE1E5431D2D027400C56EDD /* Build configuration list for PBXProject "NxusDSP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE1E54F1D2D027400C56EDD /* Debug */,
+				0AE1E5501D2D027400C56EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE1E5511D2D027400C56EDD /* Build configuration list for PBXNativeTarget "NxusDSP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE1E5521D2D027400C56EDD /* Debug */,
+				0AE1E5531D2D027400C56EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AE1E5401D2D027400C56EDD /* Project object */;
+}
