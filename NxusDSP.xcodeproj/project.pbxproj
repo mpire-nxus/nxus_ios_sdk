@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		023FC2A11E2F6DEC00A283D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023FC2A01E2F6DEC00A283D0 /* Security.framework */; };
+		023FC2A61E2F6E3F00A283D0 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FC2A31E2F6E3F00A283D0 /* SAMKeychain.m */; };
+		023FC2A71E2F6E3F00A283D0 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FC2A51E2F6E3F00A283D0 /* SAMKeychainQuery.m */; };
 		027C520A1D33A73000F49BF9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 027C52091D33A73000F49BF9 /* Constants.m */; };
 		02D972CB1E25168B00B87FDA /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D972CA1E25168B00B87FDA /* UIViewController+Tracking.m */; };
 		02E17F4C1D34F55D00831260 /* TrackingWorkerNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E17F4B1D34F55D00831260 /* TrackingWorkerNSOperation.m */; };
@@ -47,9 +50,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		023FC2A01E2F6DEC00A283D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		023FC2A21E2F6E3F00A283D0 /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		023FC2A31E2F6E3F00A283D0 /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
+		023FC2A41E2F6E3F00A283D0 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		023FC2A51E2F6E3F00A283D0 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
 		027C52081D33A73000F49BF9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		027C52091D33A73000F49BF9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		02CC984B1D3E54CE00423F62 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		02D972C91E25168B00B87FDA /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		02D972CA1E25168B00B87FDA /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		02E17F4A1D34F55D00831260 /* TrackingWorkerNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingWorkerNSOperation.h; sourceTree = "<group>"; };
@@ -77,12 +84,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023FC2A11E2F6DEC00A283D0 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023FC2A81E2F6E4300A283D0 /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				023FC2A21E2F6E3F00A283D0 /* SAMKeychain.h */,
+				023FC2A31E2F6E3F00A283D0 /* SAMKeychain.m */,
+				023FC2A41E2F6E3F00A283D0 /* SAMKeychainQuery.h */,
+				023FC2A51E2F6E3F00A283D0 /* SAMKeychainQuery.m */,
+			);
+			name = SAMKeychain;
+			sourceTree = "<group>";
+		};
 		027C520C1D33D69700F49BF9 /* Tracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +120,7 @@
 		0AE1E53F1D2D027400C56EDD = {
 			isa = PBXGroup;
 			children = (
-				02CC984B1D3E54CE00423F62 /* SafariServices.framework */,
+				023FC2A01E2F6DEC00A283D0 /* Security.framework */,
 				0AB623ED1D3CFAD60090D1C3 /* MIT-LICENSE.txt */,
 				0AE1E54A1D2D027400C56EDD /* NxusDSP */,
 				0AE1E5491D2D027400C56EDD /* Products */,
@@ -119,6 +138,7 @@
 		0AE1E54A1D2D027400C56EDD /* NxusDSP */ = {
 			isa = PBXGroup;
 			children = (
+				023FC2A81E2F6E4300A283D0 /* SAMKeychain */,
 				027C520C1D33D69700F49BF9 /* Tracking */,
 				0AE1E55B1D2D467700C56EDD /* Dto */,
 				0AE1E5541D2D267800C56EDD /* Utilities */,
@@ -230,12 +250,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE1E54E1D2D027400C56EDD /* NxusDSP.m in Sources */,
+				023FC2A71E2F6E3F00A283D0 /* SAMKeychainQuery.m in Sources */,
 				02E17F4C1D34F55D00831260 /* TrackingWorkerNSOperation.m in Sources */,
 				027C520A1D33A73000F49BF9 /* Constants.m in Sources */,
 				02E17F4F1D350CD100831260 /* TrackingItem.m in Sources */,
 				0AE1E5601D2D54AB00C56EDD /* NDDeviceInformation.m in Sources */,
 				0AE1E55A1D2D3EC600C56EDD /* NDLogger.m in Sources */,
 				0AB623E21D33E49D0090D1C3 /* NDTrackingWorker.m in Sources */,
+				023FC2A61E2F6E3F00A283D0 /* SAMKeychain.m in Sources */,
 				0AB623CC1D2FB1BA0090D1C3 /* NDDataContainer.m in Sources */,
 				02D972CB1E25168B00B87FDA /* UIViewController+Tracking.m in Sources */,
 			);
