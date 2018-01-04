@@ -2,7 +2,7 @@
 TechMpire nxus platform SDK for iOS developers
 
 ## Get iOS SDK
-Download the SDK from <a href="http://distribution.nxus.mobi/libs/ios-nxus-dsp-sdk-v1_0_16.zip">here</a>. We also have Cocoapods supported for library distribution so please check repository provided <a href="https://github.com/mpire-nxus/nxus_ios_cocoapod">here</a>
+Download the SDK from <a href="http://distribution.nxus.mobi/libs/ios-nxus-dsp-sdk-v1_0_18.zip">here</a>. We also have Cocoapods supported for library distribution so please check repository provided <a href="https://github.com/mpire-nxus/nxus_ios_cocoapod">here</a>
 
 ## Embedding the SDK
 To use the SDK, you have to drag the static library files to your project. Just open the project and drag the include folder and libNxusDSP.a file into Xcode window, under your project name.
