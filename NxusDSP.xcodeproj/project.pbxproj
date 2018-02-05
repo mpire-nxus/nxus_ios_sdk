@@ -28,6 +28,7 @@
 		02D972CB1E25168B00B87FDA /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D972CA1E25168B00B87FDA /* UIViewController+Tracking.m */; };
 		02E17F4C1D34F55D00831260 /* TrackingWorkerNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E17F4B1D34F55D00831260 /* TrackingWorkerNSOperation.m */; };
 		02E17F4F1D350CD100831260 /* TrackingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E17F4E1D350CD100831260 /* TrackingItem.m */; };
+		02F03CC32028A52600235FF8 /* CustomTrackingEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F03CC22028A52600235FF8 /* CustomTrackingEvents.m */; };
 		0AB623CC1D2FB1BA0090D1C3 /* NDDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */; };
 		0AB623E21D33E49D0090D1C3 /* NDTrackingWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB623E11D33E49D0090D1C3 /* NDTrackingWorker.m */; };
 		0AE1E54C1D2D027400C56EDD /* NxusDSP.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AE1E54B1D2D027400C56EDD /* NxusDSP.h */; };
@@ -63,6 +64,8 @@
 		02E17F4B1D34F55D00831260 /* TrackingWorkerNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingWorkerNSOperation.m; sourceTree = "<group>"; };
 		02E17F4D1D350CD100831260 /* TrackingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingItem.h; sourceTree = "<group>"; };
 		02E17F4E1D350CD100831260 /* TrackingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingItem.m; sourceTree = "<group>"; };
+		02F03CC12028A52600235FF8 /* CustomTrackingEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTrackingEvents.h; sourceTree = "<group>"; };
+		02F03CC22028A52600235FF8 /* CustomTrackingEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTrackingEvents.m; sourceTree = "<group>"; };
 		0AB623CA1D2FB1A00090D1C3 /* NDDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDataContainer.h; sourceTree = "<group>"; };
 		0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDataContainer.m; sourceTree = "<group>"; };
 		0AB623E01D33E49D0090D1C3 /* NDTrackingWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTrackingWorker.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */,
 				027C52091D33A73000F49BF9 /* Constants.m */,
 				027C52081D33A73000F49BF9 /* Constants.h */,
+				02F03CC12028A52600235FF8 /* CustomTrackingEvents.h */,
+				02F03CC22028A52600235FF8 /* CustomTrackingEvents.m */,
 			);
 			name = Dto;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F03CC32028A52600235FF8 /* CustomTrackingEvents.m in Sources */,
 				0AE1E54E1D2D027400C56EDD /* NxusDSP.m in Sources */,
 				023FC2A71E2F6E3F00A283D0 /* SAMKeychainQuery.m in Sources */,
 				02E17F4C1D34F55D00831260 /* TrackingWorkerNSOperation.m in Sources */,
