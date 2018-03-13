@@ -1,6 +1,6 @@
 //
 //  NDDeviceInformation.m
-//  NxusDSP
+//  MpireNxusMeasurement
 //
 //  Copyright © 2016. TechMpire ltd. All rights reserved.
 //
@@ -70,6 +70,12 @@ static NSDictionary *ndDeviceModelAndPpi = nil;
                             @"iPhone9,3": @[@"iPhone 7", @"326"],
                             @"iPhone9,2": @[@"iPhone 7 Plus", @"401"],
                             @"iPhone9,4": @[@"iPhone 7 Plus", @"401"],
+                            @"iPhone10,1": @[@"iPhone 8", @"326"],
+                            @"iPhone10,4": @[@"iPhone 8", @"326"],
+                            @"iPhone10,2": @[@"iPhone 8 Plus", @"401"],
+                            @"iPhone10,5": @[@"iPhone 8 Plus", @"401"],
+                            @"iPhone10,3": @[@"iPhone X", @"458"],
+                            @"iPhone10,6": @[@"iPhone X", @"458"],
                             @"iPad1,1": @[@"iPad 1", @"132"],
                             @"iPad2,1": @[@"iPad 2", @"132"],
                             @"iPad2,2": @[@"iPad 2", @"132"],
@@ -101,6 +107,12 @@ static NSDictionary *ndDeviceModelAndPpi = nil;
                             @"iPad6,8": @[@"iPad Pro 12.9 inch", @"264"],
                             @"iPad6,3": @[@"iPad Pro 9.7 inch", @"264"],
                             @"iPad6,4": @[@"iPad Pro 9.7 inch", @"264"],
+                            @"iPad6,11": @[@"iPad (5th generation)", @"264"],
+                            @"iPad6,12": @[@"iPad (5th generation)", @"264"],
+                            @"iPad7,1": @[@"iPad Pro (12.9 inch, 2nd generation)", @"264"],
+                            @"iPad7,2": @[@"iPad Pro (12.9 inch, 2nd generation)", @"264"],
+                            @"iPad7,3": @[@"iPad Pro (10.5 inch)", @"264"],
+                            @"iPad7,4": @[@"iPad Pro (10.5 inch)", @"264"],
                             @"iPod1,1": @[@"iPod 1st Gen", @"163"],
                             @"iPod2,1": @[@"iPod 2nd Gen", @"163"],
                             @"iPod3,1": @[@"iPod 3rd Gen", @"163"],
@@ -230,7 +242,6 @@ static NSDictionary *ndDeviceModelAndPpi = nil;
 
 - (NSString*) getDeviceLanguageCode {
     return [self.locale objectForKey:NSLocaleLanguageCode];
-//    return [[NSLocale preferredLanguages] objectAtIndex:0];
 }
 
 - (NSString *) getDeviceCountryCode {
@@ -263,7 +274,6 @@ static NSDictionary *ndDeviceModelAndPpi = nil;
 }
 
 - (NSString *) getDeviceModel {
-//    return self.device.model;
     if (TARGET_IPHONE_SIMULATOR) {
         return @"Simulator";
     } else {
@@ -344,14 +354,6 @@ static NSDictionary *ndDeviceModelAndPpi = nil;
 }
 
 - (NSString *) getAdvertisingIdentifier {
-//    NSString *savedIdentifier = [NDDataContainer pullAdvertisingIdentifier];
-//    if (savedIdentifier) {
-//        return savedIdentifier;
-//    } else {
-//        savedIdentifier = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-//        [NDDataContainer storeAdvertisingIdentifier:savedIdentifier];
-//        return savedIdentifier;
-//    }
     return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
 }
 

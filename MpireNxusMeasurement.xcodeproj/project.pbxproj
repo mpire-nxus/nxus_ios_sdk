@@ -31,8 +31,8 @@
 		02F03CC32028A52600235FF8 /* CustomTrackingEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F03CC22028A52600235FF8 /* CustomTrackingEvents.m */; };
 		0AB623CC1D2FB1BA0090D1C3 /* NDDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */; };
 		0AB623E21D33E49D0090D1C3 /* NDTrackingWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB623E11D33E49D0090D1C3 /* NDTrackingWorker.m */; };
-		0AE1E54C1D2D027400C56EDD /* NxusDSP.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AE1E54B1D2D027400C56EDD /* NxusDSP.h */; };
-		0AE1E54E1D2D027400C56EDD /* NxusDSP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1E54D1D2D027400C56EDD /* NxusDSP.m */; };
+		0AE1E54C1D2D027400C56EDD /* MpireNxusMeasurement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AE1E54B1D2D027400C56EDD /* MpireNxusMeasurement.h */; };
+		0AE1E54E1D2D027400C56EDD /* MpireNxusMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1E54D1D2D027400C56EDD /* MpireNxusMeasurement.m */; };
 		0AE1E55A1D2D3EC600C56EDD /* NDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1E5591D2D3EC600C56EDD /* NDLogger.m */; };
 		0AE1E5601D2D54AB00C56EDD /* NDDeviceInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1E55F1D2D54AB00C56EDD /* NDDeviceInformation.m */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				0AE1E54C1D2D027400C56EDD /* NxusDSP.h in CopyFiles */,
+				0AE1E54C1D2D027400C56EDD /* MpireNxusMeasurement.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,9 +71,9 @@
 		0AB623E01D33E49D0090D1C3 /* NDTrackingWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTrackingWorker.h; sourceTree = "<group>"; };
 		0AB623E11D33E49D0090D1C3 /* NDTrackingWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTrackingWorker.m; sourceTree = "<group>"; };
 		0AB623ED1D3CFAD60090D1C3 /* MIT-LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "MIT-LICENSE.txt"; path = "NxusDSP/MIT-LICENSE.txt"; sourceTree = "<group>"; };
-		0AE1E5481D2D027400C56EDD /* libNxusDSP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNxusDSP.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AE1E54B1D2D027400C56EDD /* NxusDSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NxusDSP.h; sourceTree = "<group>"; };
-		0AE1E54D1D2D027400C56EDD /* NxusDSP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NxusDSP.m; sourceTree = "<group>"; };
+		0AE1E5481D2D027400C56EDD /* libMpireNxusMeasurement.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMpireNxusMeasurement.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE1E54B1D2D027400C56EDD /* MpireNxusMeasurement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MpireNxusMeasurement.h; sourceTree = "<group>"; };
+		0AE1E54D1D2D027400C56EDD /* MpireNxusMeasurement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MpireNxusMeasurement.m; sourceTree = "<group>"; };
 		0AE1E5551D2D26A200C56EDD /* NDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NDHelpers.h; sourceTree = "<group>"; };
 		0AE1E5561D2D2AFC00C56EDD /* NDLogLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDLogLevel.h; sourceTree = "<group>"; };
 		0AE1E5581D2D2D4E00C56EDD /* NDLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDLogger.h; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		0AE1E5491D2D027400C56EDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AE1E5481D2D027400C56EDD /* libNxusDSP.a */,
+				0AE1E5481D2D027400C56EDD /* libMpireNxusMeasurement.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,8 +145,8 @@
 				027C520C1D33D69700F49BF9 /* Tracking */,
 				0AE1E55B1D2D467700C56EDD /* Dto */,
 				0AE1E5541D2D267800C56EDD /* Utilities */,
-				0AE1E54B1D2D027400C56EDD /* NxusDSP.h */,
-				0AE1E54D1D2D027400C56EDD /* NxusDSP.m */,
+				0AE1E54B1D2D027400C56EDD /* MpireNxusMeasurement.h */,
+				0AE1E54D1D2D027400C56EDD /* MpireNxusMeasurement.m */,
 			);
 			path = NxusDSP;
 			sourceTree = "<group>";
@@ -180,9 +180,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AE1E5471D2D027400C56EDD /* NxusDSP */ = {
+		0AE1E5471D2D027400C56EDD /* MpireNxusMeasurement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AE1E5511D2D027400C56EDD /* Build configuration list for PBXNativeTarget "NxusDSP" */;
+			buildConfigurationList = 0AE1E5511D2D027400C56EDD /* Build configuration list for PBXNativeTarget "MpireNxusMeasurement" */;
 			buildPhases = (
 				0AE1E5441D2D027400C56EDD /* Sources */,
 				0AE1E5451D2D027400C56EDD /* Frameworks */,
@@ -192,9 +192,9 @@
 			);
 			dependencies = (
 			);
-			name = NxusDSP;
+			name = MpireNxusMeasurement;
 			productName = NxusDSP;
-			productReference = 0AE1E5481D2D027400C56EDD /* libNxusDSP.a */;
+			productReference = 0AE1E5481D2D027400C56EDD /* libMpireNxusMeasurement.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0AE1E5431D2D027400C56EDD /* Build configuration list for PBXProject "NxusDSP" */;
+			buildConfigurationList = 0AE1E5431D2D027400C56EDD /* Build configuration list for PBXProject "MpireNxusMeasurement" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -227,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AE1E5471D2D027400C56EDD /* NxusDSP */,
+				0AE1E5471D2D027400C56EDD /* MpireNxusMeasurement */,
 				02B815A31D48AAA700A7F1BA /* UniversalLib */,
 			);
 		};
@@ -245,7 +245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target NxusDSP ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target NxusDSP -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target MpireNxusMeasurement ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target MpireNxusMeasurement -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -255,7 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F03CC32028A52600235FF8 /* CustomTrackingEvents.m in Sources */,
-				0AE1E54E1D2D027400C56EDD /* NxusDSP.m in Sources */,
+				0AE1E54E1D2D027400C56EDD /* MpireNxusMeasurement.m in Sources */,
 				023FC2A71E2F6E3F00A283D0 /* SAMKeychainQuery.m in Sources */,
 				02E17F4C1D34F55D00831260 /* TrackingWorkerNSOperation.m in Sources */,
 				027C520A1D33A73000F49BF9 /* Constants.m in Sources */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AE1E5431D2D027400C56EDD /* Build configuration list for PBXProject "NxusDSP" */ = {
+		0AE1E5431D2D027400C56EDD /* Build configuration list for PBXProject "MpireNxusMeasurement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AE1E54F1D2D027400C56EDD /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AE1E5511D2D027400C56EDD /* Build configuration list for PBXNativeTarget "NxusDSP" */ = {
+		0AE1E5511D2D027400C56EDD /* Build configuration list for PBXNativeTarget "MpireNxusMeasurement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AE1E5521D2D027400C56EDD /* Debug */,

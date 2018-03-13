@@ -2,10 +2,10 @@
 TechMpire nxus platform SDK for iOS developers
 
 ## Get iOS SDK
-Download the SDK from <a href="http://distribution.nxus.mobi/libs/ios-nxus-dsp-sdk-v1_0_20.zip">here</a>. We also have Cocoapods supported for library distribution so please check repository provided <a href="https://github.com/mpire-nxus/nxus_ios_cocoapod">here</a>
+Download the SDK from <a href="http://distribution.nxus.mobi/libs/ios-mpire-nxus-measurement-v1_1_0.zip">here</a>. We also have Cocoapods supported for library distribution so please check repository provided <a href="https://github.com/mpire-nxus/nxus_ios_cocoapod">here</a>
 
 ## Embedding the SDK
-To use the SDK, you have to drag the static library files to your project. Just open the project and drag the include folder and libNxusDSP.a file into Xcode window, under your project name.
+To use the SDK, you have to drag the static library files to your project. Just open the project and drag the include folder and libMpireNxusMeasurement.a file into Xcode window, under your project name.
 
 <img src="http://distribution.nxus.mobi/images/ios/image_1.png">
 
@@ -20,40 +20,40 @@ Click on the <b>Build Settings</b> tab and locate <b>Other Linker Flags</b>. In 
 After you completed the previous step, you are ready to initialise the library and start sending events.
 Open <b>AppDelegate.m</b> class and import the library header file:
 ```
-#import "include/NxusDSP/NxusDSP.h"
+#import "include/MpireNxusMeasurement/MpireNxusMeasurement.h"
 ```
 
 Then, initialise it within AppDelegate's <b>didFinishLaunchingWithOptions</b> method:
 ```
-[NxusDSP initializeLibrary:@"YOUR_API_KEY"];
+[MpireNxusMeasurement initializeLibrary:@"YOUR_API_KEY"];
 ```
 
 ## Sending custom events
 You can send custom events by calling the method <b>trackEvent</b>:
 ```
-[NxusDSP trackEvent:@"event-name"];
+[MpireNxusMeasurement trackEvent:@"event-name"];
 ```
 
 If you have any additional parameters you would like to send, pass in an instance of <b>NSMutableDictionary</b>:
 ```
 NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
 [params setValue:@"value" forKey:@"key"];
-[NxusDSP trackEvent:event params:params];
+[MpireNxusMeasurement trackEvent:event params:params];
 ```
 
 ## Sending predefined events
 You can send predefined events using the SDK, with following methods:
 ```
-[NxusDSP trackEventInstall:params];
-[NxusDSP trackEventOpen:params];
-[NxusDSP trackEventRegistration:params];
-[NxusDSP trackEventPurchase:params];
-[NxusDSP trackEventLevel:params];
-[NxusDSP trackEventTutorial:params];
-[NxusDSP trackEventAddToCart:params];
-[NxusDSP trackEventCheckout:params];
-[NxusDSP trackEventInvite:params];
-[NxusDSP trackEventAchievement:params];
+[MpireNxusMeasurement trackEventInstall:params];
+[MpireNxusMeasurement trackEventOpen:params];
+[MpireNxusMeasurement trackEventRegistration:params];
+[MpireNxusMeasurement trackEventPurchase:params];
+[MpireNxusMeasurement trackEventLevel:params];
+[MpireNxusMeasurement trackEventTutorial:params];
+[MpireNxusMeasurement trackEventAddToCart:params];
+[MpireNxusMeasurement trackEventCheckout:params];
+[MpireNxusMeasurement trackEventInvite:params];
+[MpireNxusMeasurement trackEventAchievement:params];
 ```
 Every method takes additional parameters using <b>NSMutableDictionary</b>:
 ```
@@ -64,5 +64,5 @@ NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
 ## Logging
 To enable logging, call the method debuggingEnabled before library initialisation:
 ```
-[NxusDSP debuggingEnabled:YES];
+[MpireNxusMeasurement debuggingEnabled:YES];
 ```

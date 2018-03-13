@@ -1,6 +1,6 @@
 //
 //  Constants.h
-//  NxusDSP
+//  MpireNxusMeasurement
 //
 //  Copyright © 2016 TechMpire ltd. All rights reserved.
 //

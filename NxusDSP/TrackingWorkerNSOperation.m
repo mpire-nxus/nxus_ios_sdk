@@ -1,6 +1,6 @@
 //
 //  TrackingWorkerNSOperation.m
-//  NxusDSP
+//  MpireNxusMeasurement
 //
 //  Copyright © 2016 TechMpire ltd. All rights reserved.
 //
@@ -17,8 +17,6 @@
     
     for (int i = 0; i < [allTrackingItems count]; i++) {
         TrackingItem *trackingItem = allTrackingItems[i];
-        
-        //[NDLogger debug:@"TRACKING ITEM: %@", [trackingItem getTrack]];
         
         NSString* postObject = [self getJsonObjectForTrackingItem:trackingItem];
         
@@ -143,21 +141,19 @@
         return jsonString;
     }
     
-    
-    // return
     return @"";
 }
 
 - (NSString*) testAndConvertArabDateFormat:(NSString*)input {
     NSLog (@"Date is in arab format. Convert.");
     NSNumberFormatter *formatter = [NSNumberFormatter new];
-    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"fa"]; // first try farsi for good measure!!
+    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"fa"];
     for (NSInteger i = 0; i < 10; i++) {
         NSNumber *num = @(i);
         input = [input stringByReplacingOccurrencesOfString:[formatter stringFromNumber:num] withString:num.stringValue];
     }
     
-    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"ar"]; // and now arab numbers
+    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"ar"];
     for (NSInteger i = 0; i < 10; i++) {
         NSNumber *num = @(i);
         input = [input stringByReplacingOccurrencesOfString:[formatter stringFromNumber:num] withString:num.stringValue];
@@ -167,7 +163,6 @@
 
 
 - (NSString *) getS3UrlForTrackingItem: (TrackingItem *)item {
-    // get device information
     NSMutableDictionary* deviceInformations = [[NDDeviceInformation getDeviceInformation] mutableCopy];
     NSString *s3endpoint = [NSString stringWithFormat:@"apple.%@", [deviceInformations objectForKey:ND_DI_APP_PACKAGE_NAME]];
     NSString *response = [NSString stringWithFormat:@"%@", [self sha1: s3endpoint]];

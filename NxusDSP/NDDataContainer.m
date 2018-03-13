@@ -1,6 +1,6 @@
 //
 //  NDDataContainer.m
-//  NxusDSP
+//  MpireNxusMeasurement
 //
 //  Centralized data storage for library
 //  Copyright © 2016. TechMpire ltd. All rights reserved.
@@ -18,7 +18,7 @@
     NSString *response = @"";
     
     if ([preferences objectForKey:key] == nil) {
-        //.. nooooo data for that key!
+        // do nothing
     } else {
         response = [preferences stringForKey:key];
         [NDLogger debug:@"Value found in storage: %@", response];
@@ -36,7 +36,7 @@
 
     const BOOL didSave = [preferences synchronize];
     if (!didSave) {
-        [NDLogger debug:@"NxusDSP failed to store value!"];
+        [NDLogger debug:@"MpireNxusMeasurement failed to store value!"];
     }
     
 }
@@ -47,7 +47,7 @@
     int response = 0;
     
     if ([preferences objectForKey:key] == nil) {
-        //.. nooooo data for that key!
+        // do nothing
     } else {
         response = [preferences integerForKey:key];
         [NDLogger debug:@"Value found in storage: %i", response];
@@ -65,7 +65,7 @@
 
     const BOOL didSave = [preferences synchronize];
     if (!didSave) {
-        [NDLogger debug:@"NxusDSP failed to store value!"];
+        [NDLogger debug:@"MpireNxusMeasurement failed to store value!"];
     }
     
 }
@@ -75,7 +75,7 @@
 
     double response = 0.0;
     if ([preferences objectForKey:key] == nil) {
-        //.. nooooo data for that key!
+        // do nothing
     } else {
         response = [preferences doubleForKey:key];
         [NDLogger debug:@"Value found in storage: %f", response];
@@ -92,7 +92,7 @@
 
     const BOOL didSave = [preferences synchronize];
     if (!didSave) {
-        [NDLogger debug:@"NxusDSP failed to store value!"];
+        [NDLogger debug:@"MpireNxusMeasurement failed to store value!"];
     }
     
 }
@@ -105,7 +105,7 @@
     
     const BOOL didSave = [preferences synchronize];
     if (!didSave) {
-        [NDLogger debug:@"NxusDSP failed to store tracking item!"];
+        [NDLogger debug:@"MpireNxusMeasurement failed to store tracking item!"];
     }
 }
 
@@ -152,7 +152,7 @@
     NSString *response = nil;
     
     if ([preferences objectForKey:ND_ADVERTISING_IDENTIFIER] == nil) {
-        //.. nooooo data for that key!
+        // do nothing
     } else {
         response = [preferences stringForKey:ND_ADVERTISING_IDENTIFIER];
         [NDLogger debug:@"Value found in storage: %@", response];
@@ -169,7 +169,7 @@
     
     const BOOL didSave = [preferences synchronize];
     if (!didSave) {
-        [NDLogger debug:@"NxusDSP failed to store value!"];
+        [NDLogger debug:@"MpireNxusMeasurement failed to store value!"];
     }
 }
 
@@ -181,7 +181,7 @@
     
     const BOOL didSave = [preferences synchronize];
     if (!didSave) {
-        [NDLogger debug:@"NxusDSP failed to store value!"];
+        [NDLogger debug:@"MpireNxusMeasurement failed to store value!"];
     }
 }
 

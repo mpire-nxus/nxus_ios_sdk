@@ -1,6 +1,6 @@
 //
 //  NDLogger.m
-//  NxusDSP
+//  MpireNxusMeasurement
 //
 //  Copyright © 2016. TechMpire ltd. All rights reserved.
 //
@@ -8,7 +8,7 @@
 #import "NDLogger.h"
 #import "NDHelpers.h"
 
-static NSString * const kLogTag = @"NxusDSP";
+static NSString * const kLogTag = @"MpireNxusMeasurement";
 
 @interface NDLogger()
 

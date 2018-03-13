@@ -1,13 +1,13 @@
 //
 //  UIViewController+Tracking.m
-//  NxusDSP
+//  MpireNxusMeasurement
 //
 //  Copyright © 2017 TechMpire ltd. All rights reserved.
 //
 
 #import "UIViewController+Tracking.h"
 #import <objc/runtime.h>
-#import "NxusDSP.h"
+#import "MpireNxusMeasurement.h"
 
 @implementation UIViewController (Tracking)
 
@@ -52,14 +52,14 @@
     [self tracking_viewDidAppear:animated];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setValue:NSStringFromClass([self class]) forKey:@"viewController"];
-    [NxusDSP trackEvent:@"view_controller_appeared" params:params];
+    [MpireNxusMeasurement trackEvent:@"view_controller_appeared" params:params];
 }
 
 - (void) tracking_viewDidDisappear:(BOOL)animated {
     [self tracking_viewDidDisappear:animated];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setValue:NSStringFromClass([self class]) forKey:@"viewController"];
-    [NxusDSP trackEvent:@"view_controller_disappeared" params:params];
+    [MpireNxusMeasurement trackEvent:@"view_controller_disappeared" params:params];
 }
 
 @end

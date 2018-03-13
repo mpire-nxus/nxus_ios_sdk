@@ -1,11 +1,11 @@
 //
-//  NxusDSP.m
-//  NxusDSP
+//  MpireNxusMeasurement.m
+//  MpireNxusMeasurement
 //
 //  Copyright © 2016. TechMpire ltd. All rights reserved.
 //
 
-#import "NxusDSP.h"
+#import "MpireNxusMeasurement.h"
 #import "NDLogger.h"
 #import "NDDataContainer.h"
 #import "Constants.h"
@@ -13,13 +13,13 @@
 #import "CustomTrackingEvents.h"
 
 #if !__has_feature(objc_arc)
-#error NxusDSP Library requires ARC
+#error MpireNxusMeasurement Library requires ARC
 // see README for details
 #endif
 
-@implementation NxusDSP
+@implementation MpireNxusMeasurement
 
-static NxusDSP *nxusDspInstance = nil;
+static MpireNxusMeasurement *nxusDspInstance = nil;
 
 +(void) setSdkPlatform:(NSString *)platform {
     [NDDataContainer setSdkPlatform:platform];
@@ -47,13 +47,13 @@ static NxusDSP *nxusDspInstance = nil;
     [NDDataContainer storeStringValue:ND_DSP_API_KEY value:apiKey];
     [NDTrackingWorker trackLaunch];
 
-    [NDLogger debug:@"NxusDSP library initialized"];
+    [NDLogger debug:@"MpireNxusMeasurement library initialized"];
     
     return self;
 }
 
 +(void) trackEvent:(NSString *)event {
-    [NxusDSP trackEvent:event params:nil];
+    [MpireNxusMeasurement trackEvent:event params:nil];
 }
 
 +(void) trackEvent:(NSString *)event params:(NSMutableDictionary *)params {

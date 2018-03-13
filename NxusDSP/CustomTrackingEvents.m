@@ -1,8 +1,7 @@
 //
 //  CustomTrackingEvents.m
-//  NxusDSP
+//  MpireNxusMeasurement
 //
-//  Created by Tomislav Tusek on 05/02/2018.
 //  Copyright © 2018 TechMpire ltd. All rights reserved.
 //
 
