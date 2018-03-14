@@ -7,8 +7,6 @@ Download the SDK from <a href="http://distribution.nxus.mobi/libs/ios-mpire-nxus
 ## Embedding the SDK
 To use the SDK, you have to drag the static library files to your project. Just open the project and drag the include folder and libMpireNxusMeasurement.a file into Xcode window, under your project name.
 
-<img src="http://distribution.nxus.mobi/images/ios/image_1.png">
-
 ## Adding linker flag
 The final step is to add the -ObjC linker flag. The linker tries to be efficient about only including needed code, which can sometimes exclude static library code. With this flag, all the Objective-C classes and categories in the library are loaded properly.
 
