@@ -58,6 +58,7 @@
 		023FC2A51E2F6E3F00A283D0 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
 		027C52081D33A73000F49BF9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		027C52091D33A73000F49BF9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		029DD6CC2059117600285844 /* MIT-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "MIT-LICENSE.txt"; path = "MpireNxusMeaasurement/MIT-LICENSE.txt"; sourceTree = "<group>"; };
 		02D972C91E25168B00B87FDA /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		02D972CA1E25168B00B87FDA /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		02E17F4A1D34F55D00831260 /* TrackingWorkerNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingWorkerNSOperation.h; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		0AB623CB1D2FB1BA0090D1C3 /* NDDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDataContainer.m; sourceTree = "<group>"; };
 		0AB623E01D33E49D0090D1C3 /* NDTrackingWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTrackingWorker.h; sourceTree = "<group>"; };
 		0AB623E11D33E49D0090D1C3 /* NDTrackingWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTrackingWorker.m; sourceTree = "<group>"; };
-		0AB623ED1D3CFAD60090D1C3 /* MIT-LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "MIT-LICENSE.txt"; path = "NxusDSP/MIT-LICENSE.txt"; sourceTree = "<group>"; };
 		0AE1E5481D2D027400C56EDD /* libMpireNxusMeasurement.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMpireNxusMeasurement.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE1E54B1D2D027400C56EDD /* MpireNxusMeasurement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MpireNxusMeasurement.h; sourceTree = "<group>"; };
 		0AE1E54D1D2D027400C56EDD /* MpireNxusMeasurement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MpireNxusMeasurement.m; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				023FC2A01E2F6DEC00A283D0 /* Security.framework */,
-				0AB623ED1D3CFAD60090D1C3 /* MIT-LICENSE.txt */,
-				0AE1E54A1D2D027400C56EDD /* NxusDSP */,
+				029DD6CC2059117600285844 /* MIT-LICENSE.txt */,
+				0AE1E54A1D2D027400C56EDD /* MpireNxusMeaasurement */,
 				0AE1E5491D2D027400C56EDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AE1E54A1D2D027400C56EDD /* NxusDSP */ = {
+		0AE1E54A1D2D027400C56EDD /* MpireNxusMeaasurement */ = {
 			isa = PBXGroup;
 			children = (
 				023FC2A81E2F6E4300A283D0 /* SAMKeychain */,
@@ -148,7 +148,7 @@
 				0AE1E54B1D2D027400C56EDD /* MpireNxusMeasurement.h */,
 				0AE1E54D1D2D027400C56EDD /* MpireNxusMeasurement.m */,
 			);
-			path = NxusDSP;
+			path = MpireNxusMeaasurement;
 			sourceTree = "<group>";
 		};
 		0AE1E5541D2D267800C56EDD /* Utilities */ = {
