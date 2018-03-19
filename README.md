@@ -1,5 +1,5 @@
 ## Summary
-TechMpire nxus platform SDK for iOS developers
+TechMpire Measurement SDK for iOS developers
 
 ## Get iOS SDK
 Download the SDK from <a href="http://distribution.nxus.mobi/libs/ios-mpire-nxus-measurement-v1_1_2.zip">here</a>. We also have Cocoapods supported for library distribution so please check repository provided <a href="https://github.com/mpire-nxus/nxus_ios_cocoapod">here</a>
